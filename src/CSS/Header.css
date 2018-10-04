@@ -1,3 +1,4 @@
+
 .home {
   font-family: Century Gothic, sans-serif;
   margin: -8px;
@@ -59,15 +60,14 @@ ul li a:hover {
   transition: 0.2s;
 }
 
-.main {
-  
+.main { 
   clear: both;
   height: 600px;
   background-color: #F1F1F1;
   margin-top: -20px;
  
-  
 }
+
 
 
 .header {
@@ -78,7 +78,14 @@ ul li a:hover {
 }
 
 .header2 {
+  padding-top: 50px;
+}
+
+.header3 {
   padding-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 10px;
 }
 
 .header p {
@@ -91,10 +98,24 @@ ul li a:hover {
   margin-top: 80px;
 }
 
+.buttonsPersonal {
+  margin-top: px;
+}
+
 .butleft {
-  float: left;
+  float: center;
   display: inline-block;
   margin-left: 375px;
+  border: 2px solid black;
+  padding: 5px 30px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #232423;
+}
+
+.butleftPersonal {
+  float: center;
+  display: inline-block;
   border: 2px solid black;
   padding: 5px 30px;
   border-radius: 4px;
@@ -198,4 +219,3 @@ ul li a:hover {
 .ethereum p {
   width: 500px;
 }
-

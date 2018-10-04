@@ -1,38 +1,30 @@
-import React from 'react';
-import Card2 from "antd/lib/card";
+import React from "react";
 
-import "../../CSS/Block/Block.css";
+const CryptoJS = require("crypto-js");
 
 
-const Block = props => {
-    return (
-      <Card2
-        className={`${props.index === 0 ? "genesis" : ""} block block-shadow`}
-      >
-        {/* Data */}
-        
-  
-        {/* Previous Hash */}
-        
-        
-        {/* Hash */}
-      
-  
-        {/* Block, and Mine */}
-        <div
-          style={{
-            marginTop: "27px",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            flexWrap: "nowrap",
-            textOverflow: "ellipsis"
-          }}
-        >
-          
-        </div>
-    </Card2>
-    );
-  };
-  
-  export default Block;
+
+class Block{
+  constructor(index, hash, previousHash, timestamp, data) {
+    this.index = index;
+    this.hash = hash;
+    this.previousHash = previousHash;
+    this.timestamp = timestamp;
+    this.data = data;
+
+  }
+}
+
+const nowTime = new Date().getTime() / 1000;
+
+const genesisBlock = new Block(
+  0,
+  "496AD43AD28D80DE0796D4609B8B57FA6B98E749C76AED3EE8F73DF3C77A736E",
+  null,
+  nowTime,
+  "1"
+);
+
+let blockchain = [genesisBlock];
+
+export default blockchain;

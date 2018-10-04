@@ -26,3 +26,14 @@
     -webkit-box-shadow: 0 10px 30px -5px rgba(10, 16, 34, .2) !important;
             box-shadow: 0 10px 30px -5px rgba(10, 16, 34, .2) !important;
   }
+
+  .blockk {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    min-height: 50vh;
+    margin-bottom: 50px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    
+  }

@@ -8,25 +8,24 @@ import AddButton from "../../JS/Add/Addbutten";
 import Block from "../../JS/Block/Block"
 import '../../CSS/Block/Block.css'
 import Add from "../../JS/Add/Add"
+import PersonalMain from "./PersonalMain"
 
 
 const Personal = () => {
     return (
         <div class="main">
-        
+        <PersonalMain />
         <div class="header2">
           
+        <Block />
+        
+        </div>
         <Add />
         
-
-        
-          
-
-        
-        
         </div>
         
-        </div>
+        
+        
         
     )
 }
